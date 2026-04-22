@@ -3,24 +3,166 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* — Page & Surface — */
+  --color-page-bg: #f0f2f5;
+  --color-surface: #ffffff;
+  --color-surface-raised: #ffffff;
+  --color-surface-subtle: #f7f8fa;
+
+  /* — Sidebar — */
+  --color-sidebar-bg: #ffffff;
+  --color-nav-active-bg: #eef3ff;
+  --color-nav-active-txt: #1361f5;
+  --color-nav-idle-txt: #6b7280;
+
+  /* — Brand / Primary — */
+  --color-primary: #1361f5;
+  --color-primary-hover: #0d4ed8;
+  --color-primary-subtle: #eef3ff;
+
+  /* — Text — */
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+  --color-text-tertiary: #9ca3af;
+  --color-text-inverse: #ffffff;
+
+  /* — Border — */
+  --color-border: #e5e7eb;
+  --color-border-subtle: #f3f4f6;
+  /* — Semantic: Positive — */
+  --color-green: #16a34a;
+  --color-green-bg: #dcfce7;
+  --color-green-text: #15803d;
+
+  /* — Semantic: Negative — */
+  --color-red: #dc2626;
+  --color-red-bg: #fee2e2;
+  --color-red-text: #b91c1c;
+
+  /* — Chart — */
+  --color-chart-blue: #3b82f6;
+  --color-chart-blue-fill: #3b82f620;
+  --color-chart-amber: #f59e0b;
+  --color-chart-amber-fill: #f59e0b20;
+
+  /* — Savings bars — */
+  --color-savings-blue: #1361f5;
+  --color-savings-amber: #f59e0b;
+
+  /* — Notification — */
+  --color-badge: #ef4444;
+
+  /* — Shadow — */
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --color-page-bg: #111318;
+    --color-surface: #1c1f28;
+    --color-surface-raised: #22263000;
+    --color-surface-subtle: #1a1d24;
+
+    --color-sidebar-bg: #161920;
+    --color-nav-active-bg: #1361f518;
+    --color-nav-active-txt: #5b9bff;
+    --color-nav-idle-txt: #6b7280;
+
+    --color-primary: #4b8bff;
+    --color-primary-hover: #6fa3ff;
+    --color-primary-subtle: #1361f520;
+
+    --color-text-primary: #f3f4f6;
+    --color-text-secondary: #9ca3af;
+    --color-text-tertiary: #6b7280;
+    --color-text-inverse: #111318;
+
+    --color-border: #2a2e38;
+    --color-border-subtle: #1f2229;
+
+    --color-green: #22c55e;
+    --color-green-bg: #14532d30;
+    --color-green-text: #4ade80;
+
+    --color-red: #f87171;
+    --color-red-bg: #7f1d1d30;
+    --color-red-text: #fca5a5;
+
+    --color-chart-blue: #4b8bff;
+    --color-chart-blue-fill: #4b8bff18;
+    --color-chart-amber: #fbbf24;
+    --color-chart-amber-fill: #fbbf2415;
+
+    --color-savings-blue: #4b8bff;
+    --color-savings-amber: #fbbf24;
+
+    --color-badge: #f87171;
+
+    --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-card-hover: 0 4px 16px rgba(0, 0, 0, 0.5);
   }
+}
+
+/* RESET */
+
+html {
+  height: 100%;
+  /* font-size: 62.5%; */
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Roboto, sans-serif; */
+  min-height: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+}
+
+@theme {
+  --font-sans: var(--font-dm-sans), sans-serif;
 }
