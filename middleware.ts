@@ -1,5 +1,5 @@
-import {NextResponse} from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export function middleware(request) {
+export function middleware(request: NextRequest) {
   return NextResponse.next();
 }
