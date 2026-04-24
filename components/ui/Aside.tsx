@@ -22,7 +22,7 @@ function Aside() {
             />
           </svg>
         </div>
-        DeliFin
+        <span className="hidden md:inline">DeliFin</span>
       </div>
 
       <div className="mt-1 px-5 pb-2 text-[11px] font-semibold tracking-[0.06em] text-(--color-text-tertiary) uppercase">
@@ -35,7 +35,7 @@ function Aside() {
             href="/dashboard"
           >
             <HiMiniSquares2X2 />
-            Overview
+            <span className="hidden md:inline"> Overview </span>
           </Link>
 
           <Link
@@ -43,7 +43,7 @@ function Aside() {
             href="/dashboard/transactions"
           >
             <HiMiniUser />
-            My Wallet
+            <span className="hidden md:inline"> My Wallet </span>
           </Link>
 
           <Link
@@ -51,7 +51,7 @@ function Aside() {
             href="/dashboard/transactions"
           >
             <HiWallet />
-            Transaction
+            <span className="hidden md:inline"> Transactions </span>
           </Link>
 
           <Link
@@ -59,7 +59,7 @@ function Aside() {
             href="/dashboard/loans"
           >
             <FaMoneyBillWaveAlt />
-            Loans
+            <span className="hidden md:inline"> Loans </span>
           </Link>
         </ul>
       </nav>

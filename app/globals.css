@@ -83,7 +83,7 @@
     --color-primary-subtle: #1361f520;
 
     --color-text-primary: #f3f4f6;
-    --color-text-secondary: #9ca3af;
+    --color-text-secondary: #a9afb9;
     --color-text-tertiary: #6b7280;
     --color-text-inverse: #111318;
 
@@ -160,7 +160,6 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.6rem;
 }
 
 @theme {

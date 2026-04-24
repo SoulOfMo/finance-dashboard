@@ -1,4 +1,5 @@
 import React from "react";
+import { HiMagnifyingGlass } from "react-icons/hi2";
 
 function Header() {
   return (
@@ -8,22 +9,12 @@ function Header() {
       </span>
 
       {/* Search */}
-      <button className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-(--color-border) bg-(--color-surface-subtle) text-(--color-text-secondary)">
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        >
-          <circle cx="11" cy="11" r="8" />
-          <path d="m21 21-4.35-4.35" />
-        </svg>
+      <button className="hidden h-9 w-9 cursor-pointer items-center justify-center rounded-[50%] border border-(--color-border) bg-(--color-surface-subtle) text-(--color-text-secondary) md:flex">
+        <HiMagnifyingGlass size={16} />
       </button>
 
       {/* Notifications */}
-      <button className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-(--color-border) bg-(--color-surface-subtle) text-(--color-text-secondary)">
+      <button className="hidden h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-(--color-border) bg-(--color-surface-subtle) text-(--color-text-secondary) md:flex">
         <svg
           width="16"
           height="16"
